@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95BA9E881A6EE5AE004F8DCB /* a.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 95BA9E871A6EE5AE004F8DCB /* a.m4a */; };
+		95BA9E8A1A6F457F004F8DCB /* TimesUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BA9E891A6F457F004F8DCB /* TimesUpViewController.swift */; };
+		95D2E1FF1A6D8CFB0082D16F /* sightWords.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95D2E1FE1A6D8CFB0082D16F /* sightWords.plist */; };
+		95D2E23F1A6E8E7C0082D16F /* SlapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D2E23E1A6E8E7C0082D16F /* SlapViewController.swift */; };
 		95F956F31A6C9E3B0057165E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F956F21A6C9E3B0057165E /* AppDelegate.swift */; };
 		95F956F51A6C9E3B0057165E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F956F41A6C9E3B0057165E /* ViewController.swift */; };
 		95F956F81A6C9E3B0057165E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F956F61A6C9E3B0057165E /* Main.storyboard */; };
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		95BA9E871A6EE5AE004F8DCB /* a.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.m4a; sourceTree = "<group>"; };
+		95BA9E891A6F457F004F8DCB /* TimesUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimesUpViewController.swift; sourceTree = "<group>"; };
+		95D2E1FE1A6D8CFB0082D16F /* sightWords.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sightWords.plist; sourceTree = "<group>"; };
+		95D2E23E1A6E8E7C0082D16F /* SlapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlapViewController.swift; sourceTree = "<group>"; };
 		95F956ED1A6C9E3B0057165E /* SightWordSlap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SightWordSlap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F956F11A6C9E3B0057165E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95F956F21A6C9E3B0057165E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95BA9E801A6EDFFD004F8DCB /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				95BA9E871A6EE5AE004F8DCB /* a.m4a */,
+			);
+			name = audio;
+			sourceTree = "<group>";
+		};
 		95F956E41A6C9E3A0057165E = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +93,15 @@
 		95F956EF1A6C9E3B0057165E /* SightWordSlap */ = {
 			isa = PBXGroup;
 			children = (
+				95BA9E801A6EDFFD004F8DCB /* audio */,
 				95F956F21A6C9E3B0057165E /* AppDelegate.swift */,
 				95F956F41A6C9E3B0057165E /* ViewController.swift */,
 				95F956F61A6C9E3B0057165E /* Main.storyboard */,
 				95F956F91A6C9E3B0057165E /* Images.xcassets */,
 				95F956FB1A6C9E3B0057165E /* LaunchScreen.xib */,
 				95F956F01A6C9E3B0057165E /* Supporting Files */,
+				95D2E23E1A6E8E7C0082D16F /* SlapViewController.swift */,
+				95BA9E891A6F457F004F8DCB /* TimesUpViewController.swift */,
 			);
 			path = SightWordSlap;
 			sourceTree = "<group>";
@@ -91,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				95F956F11A6C9E3B0057165E /* Info.plist */,
+				95D2E1FE1A6D8CFB0082D16F /* sightWords.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -192,6 +212,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D2E1FF1A6D8CFB0082D16F /* sightWords.plist in Resources */,
+				95BA9E881A6EE5AE004F8DCB /* a.m4a in Resources */,
 				95F956F81A6C9E3B0057165E /* Main.storyboard in Resources */,
 				95F956FD1A6C9E3B0057165E /* LaunchScreen.xib in Resources */,
 				95F956FA1A6C9E3B0057165E /* Images.xcassets in Resources */,
@@ -212,7 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95BA9E8A1A6F457F004F8DCB /* TimesUpViewController.swift in Sources */,
 				95F956F51A6C9E3B0057165E /* ViewController.swift in Sources */,
+				95D2E23F1A6E8E7C0082D16F /* SlapViewController.swift in Sources */,
 				95F956F31A6C9E3B0057165E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SightWordSlap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SightWordSlap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,6 +433,7 @@
 				95F9570E1A6C9E3B0057165E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95F9570F1A6C9E3B0057165E /* Build configuration list for PBXNativeTarget "SightWordSlapTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +442,7 @@
 				95F957111A6C9E3B0057165E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
