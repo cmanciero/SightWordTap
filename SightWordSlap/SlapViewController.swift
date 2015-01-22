@@ -19,10 +19,10 @@ class SlapViewController: UIViewController, AVAudioPlayerDelegate {
     var timer = NSTimer()
     var countdown : Float = 5.00
     
+    @IBOutlet weak var titleBar: UINavigationBar!
     @IBOutlet weak var btnFirstWord: UIButton!
     @IBOutlet weak var btnSecondWord: UIButton!
     @IBOutlet weak var btnThirdWord: UIButton!
-    @IBOutlet weak var lblWordToMatch: UILabel!
     @IBOutlet weak var displayTimer: UILabel!
     
     @IBAction func replayWord(sender: AnyObject) {
@@ -38,19 +38,30 @@ class SlapViewController: UIViewController, AVAudioPlayerDelegate {
     // Check if word slapped is right
     @IBAction func checkWord(sender: UIButton) {
         let wordSlapped = sender.titleLabel!.text
-        let correctWord = lblWordToMatch!.text
         
-        if wordSlapped == lblWordToMatch.text{
-            timer.invalidate()
-            countdown = 5.00
+        if wordSlapped == wordToSlap{
+            // play good job sound
             
-            // reset timer label
-            displayTimer.text = "5.00"
+            if(selectedGrade! == "secondGrade" || selectedGrade! == "thirdGrade" || selectedGrade! == "all"){
+                // stop timer and reset countdown
+                timer.invalidate()
+                countdown = 5.00
+            
+                // reset timer label
+                displayTimer.text = "5.00"
+            }
             
             // set next words
             setWordsToButtons()
         } else {
-            println("You got it wrong")
+            // play wrong sound
+            // list of sounds - http://iphonedevwiki.net/index.php/AudioServices
+            // AudioServicesPlaySystemSound(1105)
+            
+            var soundPath = NSBundle.mainBundle().pathForResource("wrong", ofType: "wav")
+            var sound = NSURL(fileURLWithPath: soundPath!)
+            self.prepareYourSound(sound!)
+            self.myPlayer.play()
         }
     }
     
@@ -59,18 +70,27 @@ class SlapViewController: UIViewController, AVAudioPlayerDelegate {
 
         // Do any additional setup after loading the view.
         // display label only if user selects second grade or third grade
-        if(selectedGrade! == "secondGrade" || selectedGrade! == "thirdGrade"){
+        if(selectedGrade! == "secondGrade" || selectedGrade! == "thirdGrade" || selectedGrade! == "all"){
             displayTimer.hidden = false
         }
         
         // read from plist file to get the sight words for selected grade
         if let path = NSBundle.mainBundle().pathForResource("sightWords", ofType: "plist") {
             if let dict = NSDictionary(contentsOfFile: path) as? Dictionary<String, AnyObject> {
-                if let arr = dict[selectedGrade!]! as? [String] {
-                    listOfWords = arr
-                    
-                    setWordsToButtons()
+                if selectedGrade! == "all"{
+                    for (grade, words) in dict{
+                        for word in words as [String]{
+                            listOfWords.append(word)
+                        }
+                    }
+                } else {
+                    if let arr = dict[selectedGrade!]! as? [String] {
+                        listOfWords = arr
+                    }
                 }
+                
+                // set the words to the buttons
+                setWordsToButtons()
             }
         }
     }
@@ -85,7 +105,7 @@ class SlapViewController: UIViewController, AVAudioPlayerDelegate {
     // when audio file stops playing
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
         // start timer only if user selects second grade or third grade
-        if(selectedGrade! == "secondGrade" || selectedGrade! == "thirdGrade"){
+        if(selectedGrade! == "secondGrade" || selectedGrade! == "thirdGrade" || selectedGrade! == "all"){
             startTimer()
         }
     }
@@ -132,16 +152,12 @@ class SlapViewController: UIViewController, AVAudioPlayerDelegate {
         let wordToMatch = Int(arc4random_uniform(3));
         switch(wordToMatch){
         case 0:
-            lblWordToMatch.text = firstWord
             wordToSlap = firstWord
         case 1:
-            lblWordToMatch.text = secondWord
             wordToSlap = secondWord
         case 2:
-            lblWordToMatch.text = thirdWord
             wordToSlap = thirdWord
         default:
-            lblWordToMatch.text = firstWord
             wordToSlap = firstWord
         }
         
@@ -161,6 +177,8 @@ class SlapViewController: UIViewController, AVAudioPlayerDelegate {
             performSegueWithIdentifier("timesUp", sender: nil)
         } else {
             displayTimer.text = NSString(format: "%.2F", countdown)
+
+            self.navigationItem.title = NSString(format: "%.2F", countdown)
         }
     }
     

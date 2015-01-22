@@ -8,23 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    @IBOutlet weak var btnPreSchool: UIButton!
-    @IBOutlet weak var btnKindergarten: UIButton!
-    @IBOutlet weak var btnFirstGrade: UIButton!
-    @IBOutlet weak var btnSecondGrade: UIButton!
-    @IBOutlet weak var btnThirdGrade: UIButton!
+class ViewController: UIViewController {    
+    @IBOutlet weak var btnPreK: UIButton!
+    @IBOutlet weak var btnK: UIButton!
+    @IBOutlet weak var btnFirst: UIButton!
+    @IBOutlet weak var btnSecond: UIButton!
+    @IBOutlet weak var btnThird: UIButton!
+    @IBOutlet weak var btnAll: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // setup tag to easily identify the clicked button
-        btnPreSchool.tag = 1;
-        btnKindergarten.tag = 2;
-        btnFirstGrade.tag = 3;
-        btnSecondGrade.tag = 4;
-        btnThirdGrade.tag = 5;
+        
+        btnPreK.tag = 0
+        btnK.tag = 1
+        btnFirst.tag = 2
+        btnSecond.tag = 3
+        btnThird.tag = 4
+        btnAll.tag = 5
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func navigateToScreen(sender: UIButton) {
+    @IBAction func playGame(sender: AnyObject) {
         performSegueWithIdentifier("displaySightWords", sender: sender)
     }
     
@@ -43,18 +44,22 @@ class ViewController: UIViewController {
         // Get the new view controller using [segue destinationViewController].
         var view = segue.destinationViewController as SlapViewController
         
+        var buttonClicked = sender as UIButton
+
         // Pass the selected object to the new view controller.
-        switch(sender!.tag){
-        case 1:
+        switch(buttonClicked.tag){
+        case 0:
             view.selectedGrade = "prePrimer"
-        case 2:
+        case 1:
             view.selectedGrade = "primer"
-        case 3:
+        case 2:
             view.selectedGrade = "firstGrade"
-        case 4:
+        case 3:
             view.selectedGrade = "secondGrade"
-        case 5:
+        case 4:
             view.selectedGrade = "thirdGrade"
+        case 5:
+            view.selectedGrade = "all"
         default:
             view.selectedGrade = "prePrimer"
         }
