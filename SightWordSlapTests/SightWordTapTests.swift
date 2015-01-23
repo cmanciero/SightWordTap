@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class SightWordSlapTests: XCTestCase {
+class SightWordTapTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

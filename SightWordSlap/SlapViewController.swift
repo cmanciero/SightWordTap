@@ -32,7 +32,7 @@ class SlapViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBAction func goBackToHome(sender: AnyObject) {
         timer.invalidate()
-        self.dismissViewControllerAnimated(false, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     // Check if word slapped is right
@@ -173,7 +173,7 @@ class SlapViewController: UIViewController, AVAudioPlayerDelegate {
             displayTimer.text = ""
             timer.invalidate()
             countdown = 5.00
-            
+
             performSegueWithIdentifier("timesUp", sender: nil)
         } else {
             displayTimer.text = NSString(format: "%.2F", countdown)
@@ -199,6 +199,12 @@ class SlapViewController: UIViewController, AVAudioPlayerDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "timesUp"{
+            var timesUp = segue.destinationViewController as TimesUpViewController
+            
+            println("hello")
+        }
     }
 
 }

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SightWordSlap.xcodeproj">
+      location = "self:Sight Word Tap.xcodeproj">
    </FileRef>
 </Workspace>

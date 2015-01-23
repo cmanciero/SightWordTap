@@ -12,12 +12,13 @@
 		95D2E1FF1A6D8CFB0082D16F /* sightWords.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95D2E1FE1A6D8CFB0082D16F /* sightWords.plist */; };
 		95D2E23F1A6E8E7C0082D16F /* SlapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D2E23E1A6E8E7C0082D16F /* SlapViewController.swift */; };
 		95D8E3691A71A15700E0FD7D /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 95D8E3681A71A15700E0FD7D /* wrong.wav */; };
+		95D8E36C1A71C53C00E0FD7D /* Sketch_Block.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95D8E36B1A71C53C00E0FD7D /* Sketch_Block.ttf */; };
 		95F956F31A6C9E3B0057165E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F956F21A6C9E3B0057165E /* AppDelegate.swift */; };
 		95F956F51A6C9E3B0057165E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F956F41A6C9E3B0057165E /* ViewController.swift */; };
 		95F956F81A6C9E3B0057165E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F956F61A6C9E3B0057165E /* Main.storyboard */; };
 		95F956FA1A6C9E3B0057165E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F956F91A6C9E3B0057165E /* Images.xcassets */; };
 		95F956FD1A6C9E3B0057165E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95F956FB1A6C9E3B0057165E /* LaunchScreen.xib */; };
-		95F957091A6C9E3B0057165E /* SightWordSlapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F957081A6C9E3B0057165E /* SightWordSlapTests.swift */; };
+		95F957091A6C9E3B0057165E /* SightWordTapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F957081A6C9E3B0057165E /* SightWordTapTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,16 +37,17 @@
 		95D2E1FE1A6D8CFB0082D16F /* sightWords.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sightWords.plist; sourceTree = "<group>"; };
 		95D2E23E1A6E8E7C0082D16F /* SlapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlapViewController.swift; sourceTree = "<group>"; };
 		95D8E3681A71A15700E0FD7D /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
-		95F956ED1A6C9E3B0057165E /* SightWordSlap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SightWordSlap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95D8E36B1A71C53C00E0FD7D /* Sketch_Block.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sketch_Block.ttf; sourceTree = "<group>"; };
+		95F956ED1A6C9E3B0057165E /* Sight Word Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sight Word Tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F956F11A6C9E3B0057165E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95F956F21A6C9E3B0057165E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95F956F41A6C9E3B0057165E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		95F956F71A6C9E3B0057165E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95F956F91A6C9E3B0057165E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		95F956FC1A6C9E3B0057165E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		95F957021A6C9E3B0057165E /* SightWordSlapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SightWordSlapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F957021A6C9E3B0057165E /* SightWordTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SightWordTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F957071A6C9E3B0057165E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95F957081A6C9E3B0057165E /* SightWordSlapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightWordSlapTests.swift; sourceTree = "<group>"; };
+		95F957081A6C9E3B0057165E /* SightWordTapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightWordTapTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +77,19 @@
 			name = audio;
 			sourceTree = "<group>";
 		};
+		95D8E36A1A71C52A00E0FD7D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				95D8E36B1A71C53C00E0FD7D /* Sketch_Block.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
 		95F956E41A6C9E3A0057165E = {
 			isa = PBXGroup;
 			children = (
-				95F956EF1A6C9E3B0057165E /* SightWordSlap */,
-				95F957051A6C9E3B0057165E /* SightWordSlapTests */,
+				95F956EF1A6C9E3B0057165E /* SightWordTap */,
+				95F957051A6C9E3B0057165E /* SightWordTapTests */,
 				95F956EE1A6C9E3B0057165E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,15 +97,16 @@
 		95F956EE1A6C9E3B0057165E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95F956ED1A6C9E3B0057165E /* SightWordSlap.app */,
-				95F957021A6C9E3B0057165E /* SightWordSlapTests.xctest */,
+				95F956ED1A6C9E3B0057165E /* Sight Word Tap.app */,
+				95F957021A6C9E3B0057165E /* SightWordTapTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		95F956EF1A6C9E3B0057165E /* SightWordSlap */ = {
+		95F956EF1A6C9E3B0057165E /* SightWordTap */ = {
 			isa = PBXGroup;
 			children = (
+				95D8E36A1A71C52A00E0FD7D /* fonts */,
 				95BA9E801A6EDFFD004F8DCB /* audio */,
 				95F956F21A6C9E3B0057165E /* AppDelegate.swift */,
 				95F956F41A6C9E3B0057165E /* ViewController.swift */,
@@ -106,6 +117,7 @@
 				95D2E23E1A6E8E7C0082D16F /* SlapViewController.swift */,
 				95BA9E891A6F457F004F8DCB /* TimesUpViewController.swift */,
 			);
+			name = SightWordTap;
 			path = SightWordSlap;
 			sourceTree = "<group>";
 		};
@@ -118,12 +130,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		95F957051A6C9E3B0057165E /* SightWordSlapTests */ = {
+		95F957051A6C9E3B0057165E /* SightWordTapTests */ = {
 			isa = PBXGroup;
 			children = (
-				95F957081A6C9E3B0057165E /* SightWordSlapTests.swift */,
+				95F957081A6C9E3B0057165E /* SightWordTapTests.swift */,
 				95F957061A6C9E3B0057165E /* Supporting Files */,
 			);
+			name = SightWordTapTests;
 			path = SightWordSlapTests;
 			sourceTree = "<group>";
 		};
@@ -138,9 +151,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		95F956EC1A6C9E3B0057165E /* SightWordSlap */ = {
+		95F956EC1A6C9E3B0057165E /* Sight Word Tap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95F9570C1A6C9E3B0057165E /* Build configuration list for PBXNativeTarget "SightWordSlap" */;
+			buildConfigurationList = 95F9570C1A6C9E3B0057165E /* Build configuration list for PBXNativeTarget "Sight Word Tap" */;
 			buildPhases = (
 				95F956E91A6C9E3B0057165E /* Sources */,
 				95F956EA1A6C9E3B0057165E /* Frameworks */,
@@ -150,14 +163,14 @@
 			);
 			dependencies = (
 			);
-			name = SightWordSlap;
+			name = "Sight Word Tap";
 			productName = SightWordSlap;
-			productReference = 95F956ED1A6C9E3B0057165E /* SightWordSlap.app */;
+			productReference = 95F956ED1A6C9E3B0057165E /* Sight Word Tap.app */;
 			productType = "com.apple.product-type.application";
 		};
-		95F957011A6C9E3B0057165E /* SightWordSlapTests */ = {
+		95F957011A6C9E3B0057165E /* SightWordTapTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95F9570F1A6C9E3B0057165E /* Build configuration list for PBXNativeTarget "SightWordSlapTests" */;
+			buildConfigurationList = 95F9570F1A6C9E3B0057165E /* Build configuration list for PBXNativeTarget "SightWordTapTests" */;
 			buildPhases = (
 				95F956FE1A6C9E3B0057165E /* Sources */,
 				95F956FF1A6C9E3B0057165E /* Frameworks */,
@@ -168,9 +181,9 @@
 			dependencies = (
 				95F957041A6C9E3B0057165E /* PBXTargetDependency */,
 			);
-			name = SightWordSlapTests;
+			name = SightWordTapTests;
 			productName = SightWordSlapTests;
-			productReference = 95F957021A6C9E3B0057165E /* SightWordSlapTests.xctest */;
+			productReference = 95F957021A6C9E3B0057165E /* SightWordTapTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +205,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 95F956E81A6C9E3A0057165E /* Build configuration list for PBXProject "SightWordSlap" */;
+			buildConfigurationList = 95F956E81A6C9E3A0057165E /* Build configuration list for PBXProject "Sight Word Tap" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -205,8 +218,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95F956EC1A6C9E3B0057165E /* SightWordSlap */,
-				95F957011A6C9E3B0057165E /* SightWordSlapTests */,
+				95F956EC1A6C9E3B0057165E /* Sight Word Tap */,
+				95F957011A6C9E3B0057165E /* SightWordTapTests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95D2E1FF1A6D8CFB0082D16F /* sightWords.plist in Resources */,
+				95D8E36C1A71C53C00E0FD7D /* Sketch_Block.ttf in Resources */,
 				95BA9E881A6EE5AE004F8DCB /* a.m4a in Resources */,
 				95F956F81A6C9E3B0057165E /* Main.storyboard in Resources */,
 				95F956FD1A6C9E3B0057165E /* LaunchScreen.xib in Resources */,
@@ -250,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95F957091A6C9E3B0057165E /* SightWordSlapTests.swift in Sources */,
+				95F957091A6C9E3B0057165E /* SightWordTapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +273,7 @@
 /* Begin PBXTargetDependency section */
 		95F957041A6C9E3B0057165E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 95F956EC1A6C9E3B0057165E /* SightWordSlap */;
+			target = 95F956EC1A6C9E3B0057165E /* Sight Word Tap */;
 			targetProxy = 95F957031A6C9E3B0057165E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -368,9 +382,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = SightWordSlap/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SightWordSlap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Sight Word Tap";
 			};
 			name = Debug;
 		};
@@ -379,9 +393,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = SightWordSlap/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SightWordSlap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Sight Word Tap";
 			};
 			name = Release;
 		};
@@ -422,7 +436,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		95F956E81A6C9E3A0057165E /* Build configuration list for PBXProject "SightWordSlap" */ = {
+		95F956E81A6C9E3A0057165E /* Build configuration list for PBXProject "Sight Word Tap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95F9570A1A6C9E3B0057165E /* Debug */,
@@ -431,7 +445,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95F9570C1A6C9E3B0057165E /* Build configuration list for PBXNativeTarget "SightWordSlap" */ = {
+		95F9570C1A6C9E3B0057165E /* Build configuration list for PBXNativeTarget "Sight Word Tap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95F9570D1A6C9E3B0057165E /* Debug */,
@@ -440,7 +454,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95F9570F1A6C9E3B0057165E /* Build configuration list for PBXNativeTarget "SightWordSlapTests" */ = {
+		95F9570F1A6C9E3B0057165E /* Build configuration list for PBXNativeTarget "SightWordTapTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95F957101A6C9E3B0057165E /* Debug */,

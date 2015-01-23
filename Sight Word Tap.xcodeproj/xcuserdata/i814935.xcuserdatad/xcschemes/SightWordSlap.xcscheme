@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "95F956EC1A6C9E3B0057165E"
-               BuildableName = "SightWordSlap.app"
-               BlueprintName = "SightWordSlap"
-               ReferencedContainer = "container:SightWordSlap.xcodeproj">
+               BuildableName = "Sight Word Tap.app"
+               BlueprintName = "Sight Word Tap"
+               ReferencedContainer = "container:Sight Word Tap.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "95F957011A6C9E3B0057165E"
-               BuildableName = "SightWordSlapTests.xctest"
-               BlueprintName = "SightWordSlapTests"
-               ReferencedContainer = "container:SightWordSlap.xcodeproj">
+               BuildableName = "SightWordTapTests.xctest"
+               BlueprintName = "SightWordTapTests"
+               ReferencedContainer = "container:Sight Word Tap.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "95F957011A6C9E3B0057165E"
-               BuildableName = "SightWordSlapTests.xctest"
-               BlueprintName = "SightWordSlapTests"
-               ReferencedContainer = "container:SightWordSlap.xcodeproj">
+               BuildableName = "SightWordTapTests.xctest"
+               BlueprintName = "SightWordTapTests"
+               ReferencedContainer = "container:Sight Word Tap.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "95F956EC1A6C9E3B0057165E"
-            BuildableName = "SightWordSlap.app"
-            BlueprintName = "SightWordSlap"
-            ReferencedContainer = "container:SightWordSlap.xcodeproj">
+            BuildableName = "Sight Word Tap.app"
+            BlueprintName = "Sight Word Tap"
+            ReferencedContainer = "container:Sight Word Tap.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "95F956EC1A6C9E3B0057165E"
-            BuildableName = "SightWordSlap.app"
-            BlueprintName = "SightWordSlap"
-            ReferencedContainer = "container:SightWordSlap.xcodeproj">
+            BuildableName = "Sight Word Tap.app"
+            BlueprintName = "Sight Word Tap"
+            ReferencedContainer = "container:Sight Word Tap.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "95F956EC1A6C9E3B0057165E"
-            BuildableName = "SightWordSlap.app"
-            BlueprintName = "SightWordSlap"
-            ReferencedContainer = "container:SightWordSlap.xcodeproj">
+            BuildableName = "Sight Word Tap.app"
+            BlueprintName = "Sight Word Tap"
+            ReferencedContainer = "container:Sight Word Tap.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
