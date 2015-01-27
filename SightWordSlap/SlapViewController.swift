@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class SlapViewController: UIViewController, AVAudioPlayerDelegate {
+class SlapViewController: UIViewController, AVAudioPlayerDelegate, TimesUpDelegate {
     var selectedGrade : String?
     var wordToSlap : String?
     var listOfWords = [String]()
@@ -26,8 +26,8 @@ class SlapViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var displayTimer: UILabel!
     
     @IBAction func replayWord(sender: AnyObject) {
-        timer.invalidate()
-        self.myPlayer.play()
+        // replay the word
+        replay()
     }
     
     @IBAction func goBackToHome(sender: AnyObject) {
@@ -95,6 +95,23 @@ class SlapViewController: UIViewController, AVAudioPlayerDelegate {
         }
     }
     
+    // replay the word
+    func replay(){
+        timer.invalidate()
+        countdown = 5.00
+        
+        // reset timer label
+        displayTimer.text = "5.00"
+        
+        // play the word again
+        playSound()
+    }
+    
+    // tryAgain delegate method from TimesUpViewController (TimesUpDelegate)
+    func tryAgain() {
+        replay()
+    }
+    
     // get ready to play word audio
     func prepareYourSound(soundFile:NSURL) {
         myPlayer = AVAudioPlayer(contentsOfURL: soundFile, error: nil)
@@ -108,16 +125,25 @@ class SlapViewController: UIViewController, AVAudioPlayerDelegate {
         if(selectedGrade! == "secondGrade" || selectedGrade! == "thirdGrade" || selectedGrade! == "all"){
             startTimer()
         }
+        
+        // enable the words after the word is played
+        btnFirstWord.enabled = true
+        btnSecondWord.enabled = true
+        btnThirdWord.enabled = true
     }
     
     // play audio of word to slap
     func playSound(){
-        var path = "a";//wordToSlap
+        btnFirstWord.enabled = false
+        btnSecondWord.enabled = false
+        btnThirdWord.enabled = false
+        
+        // play word
+        var path = wordToSlap!
         var soundPath = NSBundle.mainBundle().pathForResource(path, ofType: "m4a")
         var sound = NSURL(fileURLWithPath: soundPath!)
         self.prepareYourSound(sound!)
         self.myPlayer.play()
-        
     }
 
     // randomize passed in array
@@ -202,8 +228,7 @@ class SlapViewController: UIViewController, AVAudioPlayerDelegate {
         
         if segue.identifier == "timesUp"{
             var timesUp = segue.destinationViewController as TimesUpViewController
-            
-            println("hello")
+            timesUp.delegate = self
         }
     }
 

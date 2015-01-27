@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "95F957011A6C9E3B0057165E"
-               BuildableName = "SightWordTapTests.xctest"
-               BlueprintName = "SightWordTapTests"
+               BuildableName = "Sight Word TapTests.xctest"
+               BlueprintName = "Sight Word TapTests"
                ReferencedContainer = "container:Sight Word Tap.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "95F957011A6C9E3B0057165E"
-               BuildableName = "SightWordTapTests.xctest"
-               BlueprintName = "SightWordTapTests"
+               BuildableName = "Sight Word TapTests.xctest"
+               BlueprintName = "Sight Word TapTests"
                ReferencedContainer = "container:Sight Word Tap.xcodeproj">
             </BuildableReference>
          </TestableReference>

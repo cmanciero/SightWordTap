@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol TimesUpDelegate{
+    func tryAgain()
+}
+
 class TimesUpViewController: UIViewController {
+    var delegate:TimesUpDelegate? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +28,9 @@ class TimesUpViewController: UIViewController {
     
     @IBAction func closeTimesUp(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
+        if delegate? != nil{
+            delegate!.tryAgain()
+        }
     }
 
     /*
