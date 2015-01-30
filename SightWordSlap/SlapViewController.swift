@@ -174,6 +174,14 @@ class SlapViewController: UIViewController, AVAudioPlayerDelegate, TimesUpDelega
         btnSecondWord.setTitle(secondWord, forState: nil)
         btnThirdWord.setTitle(thirdWord, forState: nil)
         
+        var colors : [UIColor] = [UIColor.blueColor(), UIColor.cyanColor(), UIColor.greenColor(), UIColor.magentaColor(), UIColor.orangeColor(), UIColor.redColor(), UIColor.yellowColor()]
+        
+        let randomColorList = indexRandom(colors)
+        
+        btnFirstWord.setTitleColor(colors[randomColorList[0]], forState: nil)
+        btnSecondWord.setTitleColor(colors[randomColorList[1]], forState: nil)
+        btnThirdWord.setTitleColor(colors[randomColorList[2]], forState: nil)
+        
         // set the word to find
         let wordToMatch = Int(arc4random_uniform(3));
         switch(wordToMatch){

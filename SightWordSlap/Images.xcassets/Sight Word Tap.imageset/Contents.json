@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "bg-2.png"
+      "filename" : "Sight Word Tap.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "bg-1.png"
+      "filename" : "Sight Word Tap@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "bg.png"
+      "filename" : "Sight Word Tap@3x.png"
     }
   ],
   "info" : {

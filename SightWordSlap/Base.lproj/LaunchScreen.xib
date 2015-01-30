@@ -10,7 +10,7 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_board" translatesAutoresizingMaskIntoConstraints="NO" id="xel-ru-7F1">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sight Word Tap" translatesAutoresizingMaskIntoConstraints="NO" id="xel-ru-7F1">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                 </imageView>
             </subviews>
@@ -27,6 +27,6 @@
         </view>
     </objects>
     <resources>
-        <image name="bg_board" width="2100" height="1500"/>
+        <image name="Sight Word Tap" width="1024" height="1024"/>
     </resources>
 </document>
