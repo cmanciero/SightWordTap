@@ -164,10 +164,62 @@ class SlapViewController: UIViewController, AVAudioPlayerDelegate, TimesUpDelega
         // randomize list of words
         let randomIndexList = indexRandom(self.listOfWords)
         
+        var newIndex = 3;
+        
         // set the 3 words
         let firstWord = self.listOfWords[randomIndexList[0]]
-        let secondWord = self.listOfWords[randomIndexList[1]]
-        let thirdWord = self.listOfWords[randomIndexList[2]]
+        var secondWord = self.listOfWords[randomIndexList[1]]
+        var thirdWord = self.listOfWords[randomIndexList[2]]
+            
+        var toFirstSet = false
+        if(firstWord == "to" || firstWord == "two" || firstWord == "too"){
+            toFirstSet = true
+        }
+        
+        var toSecondSet = false
+        if(secondWord == "to" || secondWord == "two" || secondWord == "too"){
+            toSecondSet = true
+        }
+        
+        var toThirdSet = false
+        if(thirdWord == "to" || thirdWord == "two" || thirdWord == "too"){
+            toThirdSet = true
+        }
+        
+        if(toFirstSet){
+            if(toSecondSet){
+                while toSecondSet{
+                    secondWord = self.listOfWords[randomIndexList[newIndex++]]
+                    if(secondWord == "to" || secondWord == "two" || secondWord == "too"){
+                        toSecondSet = true
+                    } else {
+                        toSecondSet = false
+                    }
+                }
+            }
+            if(toThirdSet){
+                while toThirdSet{
+                    thirdWord = self.listOfWords[randomIndexList[newIndex++]]
+                    if((thirdWord == "to" || thirdWord == "two" || thirdWord == "too") && secondWord != thirdWord){
+                        println("second - \(secondWord) -> thrid - \(thirdWord)")
+                        toThirdSet = true
+                    } else {
+                        toThirdSet = false
+                    }
+                }
+            }
+        } else if(toSecondSet){
+            if(toThirdSet){
+                while toThirdSet{
+                    thirdWord = self.listOfWords[randomIndexList[newIndex++]]
+                    if((thirdWord == "to" || thirdWord == "two" || thirdWord == "too") && secondWord != thirdWord){
+                        toThirdSet = true
+                    } else {
+                        toThirdSet = false
+                    }
+                }
+            }
+        }
 
         // assign the words to the buttons
         btnFirstWord.setTitle(firstWord, forState: nil)

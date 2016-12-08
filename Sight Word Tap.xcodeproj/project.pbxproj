@@ -228,6 +228,7 @@
 		95830FAD1A759575008E08C8 /* together.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 95830F841A759575008E08C8 /* together.m4a */; };
 		95830FAE1A759575008E08C8 /* try.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 95830F851A759575008E08C8 /* try.m4a */; };
 		95830FAF1A759575008E08C8 /* warm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 95830F861A759575008E08C8 /* warm.m4a */; };
+		95A4AEC41AAD2AB800EB7705 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95A4AEC31AAD2AB800EB7705 /* Settings.bundle */; };
 		95BA9E8A1A6F457F004F8DCB /* TimesUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BA9E891A6F457F004F8DCB /* TimesUpViewController.swift */; };
 		95D2E1FF1A6D8CFB0082D16F /* sightWords.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95D2E1FE1A6D8CFB0082D16F /* sightWords.plist */; };
 		95D2E23F1A6E8E7C0082D16F /* SlapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D2E23E1A6E8E7C0082D16F /* SlapViewController.swift */; };
@@ -472,6 +473,7 @@
 		95830F841A759575008E08C8 /* together.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = together.m4a; sourceTree = "<group>"; };
 		95830F851A759575008E08C8 /* try.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = try.m4a; sourceTree = "<group>"; };
 		95830F861A759575008E08C8 /* warm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = warm.m4a; sourceTree = "<group>"; };
+		95A4AEC31AAD2AB800EB7705 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		95BA9E891A6F457F004F8DCB /* TimesUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimesUpViewController.swift; sourceTree = "<group>"; };
 		95D2E1FE1A6D8CFB0082D16F /* sightWords.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sightWords.plist; sourceTree = "<group>"; };
 		95D2E23E1A6E8E7C0082D16F /* SlapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlapViewController.swift; sourceTree = "<group>"; };
@@ -813,6 +815,7 @@
 				95F956F01A6C9E3B0057165E /* Supporting Files */,
 				95D2E23E1A6E8E7C0082D16F /* SlapViewController.swift */,
 				95BA9E891A6F457F004F8DCB /* TimesUpViewController.swift */,
+				95A4AEC31AAD2AB800EB7705 /* Settings.bundle */,
 			);
 			name = SightWordTap;
 			path = SightWordSlap;
@@ -1023,6 +1026,7 @@
 				95830F9B1A759575008E08C8 /* kind.m4a in Resources */,
 				95830F511A759566008E08C8 /* over.m4a in Resources */,
 				95830EFA1A759555008E08C8 /* sit.m4a in Resources */,
+				95A4AEC41AAD2AB800EB7705 /* Settings.bundle in Resources */,
 				95830F5C1A759566008E08C8 /* were.m4a in Resources */,
 				95830F001A759555008E08C8 /* upon.m4a in Resources */,
 				95830E331A754E7B008E08C8 /* little.m4a in Resources */,
